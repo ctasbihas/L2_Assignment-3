@@ -38,10 +38,11 @@ booksRouter.get("/:id", async (req: Request, res: Response) => {
 		const { id } = req.params;
 		const book = await Book.findById(id);
 		if (!book) {
-			return res.status(404).json({
+			res.status(404).json({
 				success: false,
 				message: "Book not found",
 			});
+			return;
 		}
 		res.status(200).json({
 			success: true,
@@ -80,10 +81,11 @@ booksRouter.put("/:bookId", async (req: Request, res: Response) => {
 			runValidators: true,
 		});
 		if (!updatedBook) {
-			return res.status(404).json({
+			res.status(404).json({
 				success: false,
 				message: "Book not found",
 			});
+			return;
 		}
 		res.status(200).json({
 			success: true,
@@ -103,10 +105,11 @@ booksRouter.delete("/:bookId", async (req: Request, res: Response) => {
 		const { bookId } = req.params;
 		const deletedBook = await Book.findByIdAndDelete(bookId);
 		if (!deletedBook) {
-			return res.status(404).json({
+			res.status(404).json({
 				success: false,
 				message: "Book not found",
 			});
+			return;
 		}
 		res.status(200).json({
 			success: true,
