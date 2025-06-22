@@ -18,5 +18,3 @@ coverage/
 *.swo
 *.bak
 *.tmp
-
-vercel.json
