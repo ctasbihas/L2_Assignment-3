@@ -10,7 +10,7 @@ app.use("/api/books", booksRouter);
 app.use("/api/borrow", borrowRouter);
 
 app.get("/", (req, res) => {
-	res.send("📚 Library API is Running!");
+	res.send("Server is running");
 });
 
 export default app;
