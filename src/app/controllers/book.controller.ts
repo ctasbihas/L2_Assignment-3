@@ -1,6 +1,5 @@
-import { Request, Response } from "express";
+import express, { Request, Response } from "express";
 import { Book } from "../models/book.model";
-import express from "express";
 
 export const booksRouter = express.Router();
 
@@ -73,7 +72,7 @@ booksRouter.post("/", async (req: Request, res: Response) => {
 		});
 	}
 });
-booksRouter.put("/:bookId", async (req: Request, res: Response) => {
+booksRouter.patch("/:bookId", async (req: Request, res: Response) => {
 	try {
 		const { bookId } = req.params;
 		const updatedBook = await Book.findByIdAndUpdate(bookId, req.body, {
