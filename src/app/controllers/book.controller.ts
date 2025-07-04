@@ -72,7 +72,7 @@ booksRouter.post("/", async (req: Request, res: Response) => {
 		});
 	}
 });
-booksRouter.patch("/:bookId", async (req: Request, res: Response) => {
+booksRouter.put("/:bookId", async (req: Request, res: Response) => {
 	try {
 		const { bookId } = req.params;
 		const updatedBook = await Book.findByIdAndUpdate(bookId, req.body, {
