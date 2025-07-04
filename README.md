@@ -6,8 +6,8 @@ A fully functional RESTful API for managing books and borrowing operations in a 
 
 ## 🚀 Live Links
 
--   🔗 Live API: [https://l2-assignment3-six.vercel.app](https://l2-assignment3-six.vercel.app)
--   📂 GitHub Repo: [https://github.com/ctasbihas/L2_Assignment-3](https://github.com/ctasbihas/L2_Assignment-3)
+-   🔗 Live API: [https://librium-server.vercel.app](https://librium-server.vercel.app)
+-   📂 GitHub Repo: [https://github.com/ctasbihas/librium-server](https://github.com/ctasbihas/librium-server)
 
 ---
 
@@ -57,7 +57,7 @@ src/
 ### 1. Clone the Repository
 
 \`\`\`bash
-git clone https://github.com/ctasbihas/L2_Assignment-3.git
+git clone https://github.com/ctasbihas/librium-server.git
 cd L2_Assignment-3
 \`\`\`
 
